@@ -1,0 +1,75 @@
+Using perl file
+
+(base) rohithram@Rohiths-MacBook-Air Results % perl trec_eval.pl qrels.adhoc.51-100.AP89.txt query_result_es_builtin2.txt   
+Error due to 23
+
+Queryid (Num):       23
+Total number of documents over all queries
+    Retrieved:    20079
+    Relevant:      1826
+    Rel_ret:       1060
+Interpolated Recall - Precision Averages:
+    at 0.00       0.4763
+    at 0.10       0.3897
+    at 0.20       0.3144
+    at 0.30       0.2627
+    at 0.40       0.2192
+    at 0.50       0.1845
+    at 0.60       0.1400
+    at 0.70       0.1162
+    at 0.80       0.0892
+    at 0.90       0.0609
+    at 1.00       0.0226
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.1925
+Precision:
+  At    5 docs:   0.3217
+  At   10 docs:   0.3087
+  At   15 docs:   0.2957
+  At   20 docs:   0.2848
+  At   30 docs:   0.2725
+  At  100 docs:   0.1887
+  At  200 docs:   0.1341
+  At  500 docs:   0.0772
+  At 1000 docs:   0.0461
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.2303
+
+
+
+
+Using My Python Code
+
+(base) rohithram@Rohiths-MacBook-Air Results % Python trec_eval2.py qrels.adhoc.51-100.AP89.txt query_result_es_builtin2.txt
+
+Queryid (Num):    23
+Total number of documents over all queries
+    Retrieved:    20079
+    Relevant:     1826
+    Rel_ret:      1060
+Interpolated Recall - Precision Averages:
+    at 0.00       0.3217
+    at 0.10       0.3130
+    at 0.20       0.2848
+    at 0.30       0.2710
+    at 0.40       0.1887
+    at 0.50       0.1341
+    at 0.60       0.0772
+    at 0.70       0.0461
+    at 0.80       0.0461
+    at 0.90       0.0461
+    at 1.00       0.0461
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.1924
+Precision:
+  At    5 docs:   0.3217
+  At   10 docs:   0.3130
+  At   15 docs:   0.2928
+  At   20 docs:   0.2848
+  At   30 docs:   0.2710
+  At  100 docs:   0.1887
+  At  200 docs:   0.1341
+  At  500 docs:   0.0772
+  At 1000 docs:   0.0461
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.2303

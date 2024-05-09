@@ -1,0 +1,33 @@
+(base) rohithram@Rohiths-MacBook-Air Results % Python trec_eval2.py qrels.txt query_result_es_builtin_hw3.txt 
+
+Queryid (Num):    3
+Total number of documents over all queries
+    Retrieved:    3001
+    Relevant:     692
+    Rel_ret:      462
+Interpolated Recall - Precision Averages:
+    at 0.00       2.0000
+    at 0.10       1.9667
+    at 0.20       1.8667
+    at 0.30       1.7778
+    at 0.40       1.5233
+    at 0.50       1.0467
+    at 0.60       0.4300
+    at 0.70       0.2210
+    at 0.80       0.2210
+    at 0.90       0.2210
+    at 1.00       0.2210
+Average precision (non-interpolated) for all rel docs(averaged over queries)
+                  0.6135
+Precision:
+  At    5 docs:   2.0000
+  At   10 docs:   1.9667
+  At   15 docs:   1.9111
+  At   20 docs:   1.8667
+  At   30 docs:   1.7778
+  At  100 docs:   1.5233
+  At  200 docs:   1.0467
+  At  500 docs:   0.4300
+  At 1000 docs:   0.2210
+R-Precision (precision after R (= num_rel for a query) docs retrieved):
+    Exact:        0.9140
